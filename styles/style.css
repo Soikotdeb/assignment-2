@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700;800&display=swap');
+*{
+   font-family: 'Open Sans', sans-serif;
+}
+
+body{
+   margin: 0px;
+   padding: 0px; 
+   text-transform: capitalize;
+}
+.container{
+   padding: 0 80px;
+}
+.header{
+background-color: rgba(255, 144, 14, 0.1);
+padding: ;
+}
+.navi{
+   display: flex;
+   justify-content: space-between;
+  
+}
+
+.navi a{
+   margin-right: 10px;
+  text-decoration: none;
+ 
+}
+/* navigation end */
+.brand-name{
+   text-align: center;
+}
+.big-text{
+   font-size: 50px;
+}
+.small-text{
+   font-size: 17px;
+   color: #727272;
+}
+button{
+   color:#FFFFFF;
+ height: 50px;
+ width: 120px;
+  border-radius: 5px;
+  background-color: #FF900E;
+  margin-bottom: 20px;
+}
+.banner img{
+   width: 100%;
+   
+}
+/* container header end  */
+
+/* cliend stert */
+.color-change{
+   color:#FF900E ;
+}
+.color-changes{
+   color: #727272;
+}
+.features{
+   display: flex;
+   margin-top: 30px;
+}
+.feature-text{
+   font-size: 30px;
+}
+.features-details{
+   margin-top: 200px;
+ margin-left: 70px; 
+}
+
+.client-img{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+}
+/* cliend end */
+
+/* cliend smill stert */
+.cliend-smill{
+   position: relative;
+   margin-top: 70px;
+}
+
+.smile{
+   display: flex;
+   gap: 20px;
+}
+.text-s{
+   font-size: 30px; 
+}
+.smile-information{
+   margin-top: 70px;
+   
+}
+.desktop{
+   
+   box-shadow : 0px 4px 30px rgba(0, 0,0, 0.06);
+   padding: 20px;
+}
+
+
+.last-button{
+  width: 142px;
+  height: 100px;
+  font-size: 20px;
+  position: absolute;
+  bottom: 50px;
+  position: relative;
+right: 20px;
+}
+.fact-s{
+ font-size: 45px;
+  
+}
+.facts{
+   margin-bottom: 90px;
+}
+/* cliend smill end */
+/* card stert */
+.some-information{
+   display: flex;
+   align-items: center;
+   justify-content:space-around;
+  padding: 130px;
+   margin: 0px auto;
+   margin-bottom: 50px;
+   margin-top: -100px;
+}
+
+.card{
+   border: 2px solid #FF900E;
+   padding: 20px;
+   text-align: center;
+   border-radius: 10px;
+   font-weight: 700;
+font-size: 20px;
+}
+.card:hover{
+   box-shadow: 2px 2px 3px;
+    transition: 0.6s;
+    transform: scale(1.2,1.2); 
+     background-color: #dddad6;
+}
+/* card end */
+/* sponsor stert */
+.sponsor{
+   text-align: center;
+}
+.sponsor-company{
+   display: flex;
+  align-items: center;
+ justify-content: center;
+ gap: 40px;
+ margin-top: 40px;
+ margin-bottom: 50px;
+}
+.copyright{
+   text-align: center;
+   color:#424242;
+   height: 70px;  
+   width: 1000px;
+    background-color: #FFF4E7;
+    margin: 0px auto;
+   margin-bottom: 100px;
+}
+.line{
+   width: 5px;
+   background-color: #FF900E;
+   height:100px ;
+position: absolute;
+
+}
+.information{
+   height: 100%;
+   width:50%;
+   background-color: #f7f4f0;
+   text-align: center;
+   margin: 0px auto;
+   border-radius: 90px;
+}
+.extra{
+   text-align: center;
+}
+
+.submits{
+   margin-top: 10px;
+margin-right: 130px;
+}
+.comment{
+   background-color: rgb(36, 160, 160);
+}
+/*
+ responsive to mobile  version
+*/
+@media only screen and (max-width:576px) {
+  /* header responsive  stert*/
+  .container{
+   padding: 0px;
+}
+.navi{
+   font-size: 10px;
+   flex-direction: column;
+}
+
+   .banner img{
+      width: 100%;
+   }
+   .big-text{
+      font-size: 30px;
+   }
+   .client-img{
+      display: flex;
+      flex-direction: column;
+   }
+   .client-img img{
+   width: 100%;
+     
+   }
+   .features{
+      flex-direction:column-reverse ;
+      width: 100%;
+   }
+.brand-name{
+   padding: 10px;
+}
+
+/* header end */
+/* smile responsive */
+
+.desktop{
+   font-size: 20px;
+}
+.small-text{
+   font-size: 12px;
+   padding: 10px;
+}
+
+.smile{
+   flex-direction:column-reverse ;
+   padding: 10px;
+}
+.beuty img{
+   width: 100%;
+}
+
+.smaller{
+   width: 50%;
+   padding: 0px;
+}
+.fact-s{
+   text-align: center;
+}
+/* card responsive */
+.some-information{
+   flex-direction: column;
+  gap: 14px;
+}
+.information{
+   width: 100%;
+   font-size: 10px;
+}
+textarea{
+width: 80%;
+}
+.submits{
+   width: 50%;
+   margin-left: 80px;
+}
+/* sponsor responsive */
+.sponsor{
+   
+   height: 100%;
+   width: 100%;
+   font-size: 20px;
+}
+.sponsor-company{
+   flex-direction: column;
+   width: 100%;
+}
+.copyright{
+   height:100%;
+   width: 100%;
+   font-size: 10px;
+}
+.features-details{
+   margin-top: -30px;
+}
+}
+/* finally responsive end */
